@@ -1,0 +1,392 @@
+EXPERIMENT RESULTS: N=1
+============================================================
+Number of profiles tested: 1
+N values tested: [1, 3, 5]
+============================================================
+
+
+############################################################
+# GAME 1
+############################################################
+
+============================================================
+Game: N=1, Profile 1
+Ground Truth: recursion: high, pointers: low, loops: low
+============================================================
+
+--- Turn 1 ---
+
+Q: Given an array of integers, write a function that returns the sum of all elements in the array, using only a recursive approach.
+
+A: I think recursion is when you use a for loop inside another for loop? So maybe I should loop through the array and add each number one by one… I’m not sure how to do it without a loop, but I’ll try: if the array is empty, return 0, otherwise add the first element and call the function on the rest? Wait, how do you even get the rest of the array in C? I think you need pointers for that… I don’t really get this.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, what did student say? confused about recursive approach, what level does it indicate? LOW
+- pointers: was it tested? yes, what did student said? confused about pointers, what level does it indicate? LOW
+- loops: was it tested? no, what did student say? N/A, what level does it indicate? keep previous belief
+
+Updated beliefs:
+  recursion: L=0.67 M=0.25 H=0.08 -> low (67%)
+  pointers: L=0.67 M=0.25 H=0.08 -> low (67%)
+  loops: L=0.33 M=0.33 H=0.34 -> high (34%)
+
+Correctness check (1/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: high ✗
+
+--- Turn 2 ---
+
+Q: Given a binary tree where each node has a value and two children, write a function that returns the maximum depth of the tree using only a recursive approach. You can assume the tree is non-empty and each node has a non-negative integer value.
+
+A: I think recursion is when you call a function inside a loop, right? So maybe I should use a for loop to go through each level of the tree… I’m not sure how to check the depth without pointers, but I’ll guess: if the node exists, add 1 and call the function on both children, then return the bigger one? Wait, how do you even compare them? I think you need to use pointers to access the left and right… I don’t really get this.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, what did student say? shows confusion about recursion, what level does it indicate? low
+- pointers: was it tested? yes, what did student say? shows confusion about pointers, what level does it indicate? low
+- loops: was it tested? yes, what did student say? didn't mention loops, what level does it indicate? keep previous belief (high)
+
+Updated beliefs:
+  recursion: L=0.80 M=0.15 H=0.05 -> low (80%)
+  pointers: L=0.80 M=0.15 H=0.05 -> low (80%)
+  loops: L=0.34 M=0.33 H=0.33 -> low (34%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 3 ---
+
+Q: Given a large dataset, write a function to print each element only once, without using any loops or pointers. You can use a recursive approach, but you must explain how it works and what data structure you're using to keep track of the elements you've already printed.
+
+A: I think recursion is when you use a for loop to go through everything, but without writing a loop? So maybe I just call the function on each element and check if it’s already printed… I don’t really get how to track what’s been printed without arrays or pointers, but I guess I could use a magic box that remembers things? Like, if the current element is in the magic box, skip it, else print it and put it in the box? But how do you make a magic box in C? I’m not sure…
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, three times
+  - Turn 1: student showed confusion about recursion, indicated LOW
+  - Turn 2: student showed confusion about recursion, indicated LOW
+  - Turn 3: student showed confusion about recursion, indicated LOW
+  what level does it indicate? LOW
+- pointers: was it tested? yes, two times
+  - Turn 1: student showed confusion about pointers, indicated LOW
+  - Turn 2: student showed confusion about pointers, indicated LOW
+  what level does it indicate? LOW
+- loops: was it tested? yes, one time
+  - Turn 3: student didn’t mention loops at all
+  what level does it indicate? keep previous belief (LOW)
+
+[Pass 1] (parse error)
+
+Updated beliefs:
+  recursion: L=0.80 M=0.15 H=0.05 -> low (80%)
+  pointers: L=0.80 M=0.15 H=0.05 -> low (80%)
+  loops: L=0.34 M=0.33 H=0.33 -> low (34%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 4 ---
+
+Q: Consider a binary tree where each node has a value and two children. Write a function to traverse the tree in-order (left, current, right), using only a recursive approach. You can assume the tree is non-empty and each node has a non-negative integer value.
+
+A: I think recursion is when you use a for loop to go through the tree, but without writing a loop… so maybe I just print the left child, then the current node, then the right child? But I’m not sure how to access them without pointers—I thought pointers were for numbers? I’ll guess: if the node exists, call the function on the left, print the value, then call it on the right… but I don’t really know how the tree is stored or how to get the children. I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, 4 times
+  - Turn 1: Student showed confusion and fundamental errors about recursion, indicating LOW
+  - Turn 2: Student showed confusion and fundamental errors about recursion, indicating LOW
+  - Turn 3: Student showed confusion and fundamental errors about recursion, indicating LOW
+  - Turn 4: Student showed confusion and fundamental errors about recursion, indicating LOW
+  - Skill level: LOW
+- pointers: was it tested? yes, 3 times
+  - Turn 1: Student showed confusion about pointers, indicating LOW
+  - Turn 2: Student showed confusion about pointers, indicating LOW
+  - Turn 3: Not explicitly mentioned, but implied in the student's confusion about data structures and memory, indicating LOW
+  - Skill level: LOW
+- loops: was it tested? yes, 1 time
+  - Turn 1: Student showed confusion and fundamental errors about loops, indicating LOW
+  - Skill level: LOW
+
+[Pass 1] (parse error)
+
+Updated beliefs:
+  recursion: L=0.80 M=0.15 H=0.05 -> low (80%)
+  pointers: L=0.80 M=0.15 H=0.05 -> low (80%)
+  loops: L=0.34 M=0.33 H=0.33 -> low (34%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 5 ---
+
+Q: Consider a binary search tree where each node has a value and two children, and each value is unique. Write a function to find a specific value in the tree using only a recursive approach. You can assume the tree is non-empty and each node has a non-negative integer value, but you must explain how you'll use recursion to traverse the tree and find the value without using any loops or pointers.
+
+A: I think recursion is when you use a for loop to check each node, but without writing a loop… so maybe I compare the value with the current node, and if it’s smaller, I go left, and if bigger, I go right? But I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers? I’ll guess: if the value matches, return true, else call the function on the left or right… but I don’t know how to access them or if the tree even lets you do that. I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, 5 times
+  - Turn 1: I think recursion is when you use a for loop inside another for loop? → LOW
+  - Turn 2: I think recursion is when you call a function inside a loop, right? → LOW
+  - Turn 3: I think recursion is when you use a for loop to go through everything, but without writing a loop? → LOW
+  - Turn 4: I think recursion is when you use a for loop to go through the tree, but without writing a loop… → LOW
+  - Turn 5: I think recursion is when you use a for loop to check each node, but without writing a loop… → LOW
+  - Skill level: LOW
+- pointers: was it tested? yes, 4 times
+  - Turn 1: I’m not sure how to get the rest of the array in C? I think you need pointers for that… → LOW
+  - Turn 2: I’m not sure how to check the depth without pointers, but I’ll guess: → LOW
+  - Turn 4: But I’m not sure how to access them without pointers—I thought pointers were for numbers? → LOW
+  - Turn 5: But I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers? → LOW
+  - Skill level: LOW
+- loops: was it tested? yes, 3 times
+  - Turn 1: So maybe I should loop through the array and add each number one by one… → LOW
+  - Turn 2: So maybe I should use a for loop to go through each level of the tree… → LOW
+  - Turn 3: You can use a recursive approach, but you must explain how it works and what data structure you're using to keep track of the elements you've already printed. (No loop) → HIGH
+  - Skill level: MEDIUM
+
+[Pass 1] (parse error)
+
+Updated beliefs:
+  recursion: L=0.80 M=0.15 H=0.05 -> low (80%)
+  pointers: L=0.80 M=0.15 H=0.05 -> low (80%)
+  loops: L=0.34 M=0.33 H=0.33 -> low (34%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 6 ---
+
+Q: Given a one-dimensional array of integers with 'n' elements, write a recursive function to find the index of the first occurrence of a specified target element. Assume that the array is partially sorted, where each element is greater than or equal to the previous one. You can use a recursive approach, but you must explain how you'll handle the partially sorted array and find the target element.
+
+A: I think recursion is when you use a for loop to check each element one by one, but without writing a loop… so maybe I start at index 0, and if the element matches, return 0, else I add 1 and call the function again? I’m not sure how to get the next index without pointers—I thought pointers were for storing numbers? And I don’t really get how being “partially sorted” helps… maybe it just means I can stop early if the number gets too big? But I don’t know how to check that without loops. I’ll guess: if current element equals target, return index, else call on index+1… but I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, 6 times
+  - Turn 1: I think recursion is when you use a for loop inside another for loop?... I’m not sure how to do it without a loop, but I’ll try... I don’t really get this. → LOW
+  - Turn 2: I think recursion is when you call a function inside a loop, right?... I’m not sure how to check the depth without pointers, but I’ll guess... I don’t really get this. → LOW
+  - Turn 3: I think recursion is when you use a for loop to go through everything, but without writing a loop?... I don’t really get how to track what’s been printed without arrays or pointers, but I guess I could use a magic box that remembers things?... I’m not sure... → LOW
+  - Turn 4: I think recursion is when you use a for loop to go through the tree, but without writing a loop… so maybe I just print the left child, then the current node, then the right child?... I’m not sure how to access them without pointers—I thought pointers were for numbers?... I’ll guess: if the node exists, call the function on the left, print the value, then call it on the right… but I don’t really know how the tree is stored or how to get the children. I’m not sure this works. → LOW
+  - Turn 5: I think recursion is when you use a for loop to check each node, but without writing a loop… so maybe I compare the value with the current node, and if it’s smaller, I go left, and if bigger, I go right?... But I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers?... I’ll guess: if the value matches, return true, else call the function on the left or right… but I don’t know how to access them or if the tree even lets you do that. I’m not sure this works. → LOW
+  - Turn 6: I think recursion is when you use a for loop to check each element one by one, but without writing a loop… so maybe I start at index 0, and if the element matches, return 0, else I add 1 and call the function again?... I’m not sure how to get the next index without pointers—I thought pointers were for storing numbers?... And I don’t really get how being “partially sorted” helps… maybe it just means I can stop early if the number gets too big? But I don’t know how to check that without loops. I’ll guess: if current element equals target, return index, else call on index+1… but I’m not sure this works. → LOW
+- pointers: was it tested? yes, 4 times
+  - Turn 1: I think you need pointers for that… I don’t really get this. → LOW
+  - Turn 2: I’m not sure how to check the depth without pointers, but I’ll guess... I don’t really get this. → LOW
+  - Turn 4: I’m not sure how to access them without pointers—I thought pointers were for numbers?... I guess: if the node exists, call the function on the left, print the value, then call it on the right… but I don’t really know how the tree is stored or how to get the children. I’m not sure this works. → LOW
+  - Turn 5: I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers?... I’ll guess: if the value matches, return true, else call the function on the left or right… but I don’t know how to access them or if the tree even lets you do that. I’m not sure this works. → LOW
+- loops: was it tested? yes, 1 time
+  - Turn 1: So maybe I should loop through the array and add each number one by one… → LOW
+
+Updated beliefs:
+  recursion: L=0.95 M=0.05 H=0.00 -> low (95%)
+  pointers: L=0.90 M=0.10 H=0.00 -> low (90%)
+  loops: L=0.91 M=0.08 H=0.01 -> low (91%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 7 ---
+
+Q: Consider a binary tree where each node has a value and two children, and each value is unique. Write a function to find a specific value in the tree using only a recursive approach, but without using pointers to access the left and right children. You can assume the tree is non-empty and each node has a non-negative integer value, and explain how you'll use recursion to traverse the tree and find the value.
+
+A: I think recursion is when you use a for loop to check every node, but without writing a loop… so maybe I just guess the left and right children are stored like array indexes? Like, if current node is at index i, left is 2*i and right is 2*i+1? I’m not sure how that works without pointers—I thought pointers were for numbers, not tree paths. I’ll say: if the value matches, return true, else check index 2*i and 2*i+1… but I don’t really know how the tree is laid out in memory. I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, 7 times 
+  - Turn 1: I think recursion is when you use a for loop inside another for loop? So maybe I should loop through the array and add each number one by one… I’m not sure how to do it without a loop, but I’ll try: if the array is empty, return 0, otherwise add the first element and call the function on the rest? Wait, how do you even get the rest of the array in C? I think you need pointers for that… I don’t really get this. → LOW
+  - Turn 2: I think recursion is when you call a function inside a loop, right? So maybe I should use a for loop to go through each level of the tree… I’m not sure how to check the depth without pointers, but I’ll guess: if the node exists, add 1 and call the function on both children, then return the bigger one? Wait, how do you even compare them? I think you need to use pointers to access the left and right… I don’t really get this. → LOW
+  - Turn 3: I think recursion is when you use a for loop to go through everything, but without writing a loop? So maybe I just call the function on each element and check if it’s already printed… I don’t really get how to track what’s been printed without arrays or pointers, but I guess I could use a magic box that remembers things? Like, if the current element is in the magic box, skip it, else print it and put it in the box? But how do you make a magic box in C? I’m not sure… → LOW
+  - Turn 4: I think recursion is when you use a for loop to go through the tree, but without writing a loop… so maybe I just print the left child, then the current node, then the right child? But I’m not sure how to access them without pointers—I thought pointers were for numbers? I’ll guess: if the node exists, call the function on the left, print the value, then call it on the right… but I don’t really know how the tree is stored or how to get the children. I’m not sure this works. → LOW
+  - Turn 5: I think recursion is when you use a for loop to check each node, but without writing a loop… so maybe I compare the value with the current node, and if it’s smaller, I go left, and if bigger, I go right? But I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers? I’ll guess: if the value matches, return true, else call the function on the left or right… but I don’t know how to access them or if the tree even lets you do that. I’m not sure this works. → LOW
+  - Turn 6: I think recursion is when you use a for loop to check each element one by one, but without writing a loop… so maybe I start at index 0, and if the element matches, return 0, else I add 1 and call the function again? I’m not sure how to get the next index without pointers—I thought pointers were for storing numbers? And I don’t really get how being “partially sorted” helps… maybe it just means I can stop early if the number gets too big? But I don’t know how to check that without loops. I’ll guess: if current element equals target, return index, else call on index+1… but I’m not sure this works. → LOW
+  - Turn 7: I think recursion is when you use a for loop to check every node, but without writing a loop… so maybe I just guess the left and right children are stored like array indexes? Like, if current node is at index i, left is 2*i and right is 2*i+1? I’m not sure how that works without pointers—I thought pointers were for numbers, not tree paths. I’ll say: if the value matches, return true, else check index 2*i and 2*i+1… but I don’t really know how the tree is laid out in memory. I’m not sure this works. → LOW
+- pointers: was it tested? yes, 3 times 
+  - Turn 1: Wait, how do you even get the rest of the array in C? I think you need pointers for that… I don’t really get this. → LOW
+  - Turn 2: Wait, how do you even compare them? I think you need to use pointers to access the left and right… I don’t really get this. → LOW
+  - Turn 4: But I’m not sure how to access them without pointers—I thought pointers were for numbers? → LOW
+- loops: was it tested? yes, 3 times 
+  - Turn 1: I should loop through the array and add each number one by one… → LOW
+  - Turn 2: I should use a for loop to go through each level of the tree… → LOW
+  - Turn 6: But I don’t know how to check that without loops. → LOW
+
+Updated beliefs:
+  recursion: L=0.99 M=0.01 H=0.00 -> low (99%)
+  pointers: L=0.98 M=0.02 H=0.00 -> low (98%)
+  loops: L=0.99 M=0.01 H=0.00 -> low (99%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 8 ---
+
+Q: Given a binary search tree where each node has a value and two children, and each value is unique, write a function to find a specific value in the tree using only a recursive approach. You can assume the tree is non-empty and each node has a non-negative integer value, but you must explain how you'll use recursion to traverse the tree and find the value without using any pointers.
+
+A: I think recursion is when you use a for loop to check nodes, but without writing a loop… so maybe the tree is stored like an array where left child is 2*i and right is 2*i+1? I’m not sure how to “traverse” without pointers—I thought pointers were for storing numbers, not tree links. I’ll guess: if current node equals target, return true, else call on 2*i and 2*i+1… but I don’t know if the tree even uses array indexing, and I’m not sure how to stop if the value isn’t there. I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+<tr>
+    <th>Recursion</th>
+    <th>Was it tested?</th>
+    <th>Student's answer</th>
+    <th>Indicated level</th>
+  </tr>
+  <tr>
+    <td>Turn 1</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 2</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 3</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 4</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 5</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 6</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 7</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+  <tr>
+    <td>Turn 8</td>
+    <td>Yes</td>
+    <td>Confused about recursion, base cases, recursive calls</td>
+    <td>LOW</td>
+  </tr>
+
+Updated beliefs:
+  recursion: L=0.99 M=0.01 H=0.00 -> low (99%)
+  pointers: L=0.98 M=0.02 H=0.00 -> low (98%)
+  loops: L=0.99 M=0.01 H=0.00 -> low (99%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 9 ---
+
+Q: Given an array of integers, write a function to find the first duplicate element in the array, using only a loop approach without any pointers or recursion. You can assume the array is non-empty and each element is a non-negative integer value.
+
+A: I think loops are when you repeat something by writing the same code over and over… maybe I just check every pair of elements? Like, for each number, I look at all the others after it? I’m not sure how to do that without pointers—I thought pointers were for numbers, so maybe I just use two for loops? Like, if array[i] equals array[j], return it? But I don’t know if j starts at i+1 or what… I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+<li>Recursion: Tested in every question, student showed confusion and fundamental errors in understanding recursive functions, base cases, and recursive calls. Their explanations often involved loops or pointers, indicating a lack of understanding of recursive concepts.</li>
+  <li>Pointers: Tested in every question, student showed confusion and fundamental errors in understanding memory addresses, dereferencing, and pointer arithmetic. Their explanations often involved loops or arrays, indicating a lack of understanding of pointers.</li>
+  <li>Loops: Tested in question 9, student showed some understanding of loops, but their explanation was incorrect and they relied on loops to solve the problem. They also showed confusion about pointers.</li>
+
+Updated beliefs:
+  recursion: L=1.00 M=0.00 H=0.00 -> low (100%)
+  pointers: L=1.00 M=0.00 H=0.00 -> low (100%)
+  loops: L=0.99 M=0.01 H=0.00 -> low (99%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+--- Turn 10 ---
+
+Q: Given a binary search tree where each node has a value and two children, and each value is unique, write a function to find a specific value in the tree using only a recursive approach, and explain how you'll use recursion to traverse the tree and find the value without using any pointers.
+
+A: I think recursion is when you use a for loop to check nodes, but without writing a loop… so maybe the tree is stored like an array where left child is 2*i and right is 2*i+1? I’m not sure how to “traverse” without pointers—I thought pointers were for storing numbers, not tree links. I’ll guess: if current node equals target, return true, else call on 2*i and 2*i+1… but I don’t know if the tree even uses array indexing, and I’m not sure how to stop if the value isn’t there. I’m not sure this works.
+
+[Thinking - N=1]:
+[Initial]
+- recursion: was it tested? yes, 10 times
+  - Turn 1: "I think recursion is when you use a for loop inside another for loop?" → LOW
+  - Turn 2: "I think recursion is when you call a function inside a loop, right?" → LOW
+  - Turn 3: "I think recursion is when you use a for loop to go through everything, but without writing a loop?" → LOW
+  - Turn 4: "I think recursion is when you use a for loop to go through the tree, but without writing a loop…" → LOW
+  - Turn 5: "I think recursion is when you use a for loop to check each node, but without writing a loop…" → LOW
+  - Turn 6: "I think recursion is when you use a for loop to check each element one by one, but without writing a loop…" → LOW
+  - Turn 7: "I think recursion is when you use a for loop to check every node, but without writing a loop…" → LOW
+  - Turn 8: "I think recursion is when you use a for loop to check nodes, but without writing a loop…" → LOW
+  - Turn 9: Not recursion related
+  - Turn 10: "I think recursion is when you use a for loop to check nodes, but without writing a loop…" → LOW
+  what level does it indicate? LOW
+- pointers: was it tested? yes, 8 times
+  - Turn 1: "I think you need pointers for that…" → LOW
+  - Turn 2: "I’m not sure how to check the depth without pointers, but I’ll guess…" → LOW
+  - Turn 3: "I don’t really get how to track what’s been printed without arrays or pointers, but I guess I could use a magic box that remembers things?" → LOW
+  - Turn 4: "But I’m not sure how to access them without pointers—I thought pointers were for numbers?" → LOW
+  - Turn 5: "I’m not sure how to “go” anywhere without pointers—I thought pointers were for storing numbers?" → LOW
+  - Turn 6: "I’m not sure how to get the next index without pointers—I thought pointers were for storing numbers?" → LOW
+  - Turn 7: "I’m not sure how that works without pointers—I thought pointers were for numbers, not tree paths." → LOW
+  - Turn 8: Not pointers related
+  - Turn 9: Not pointers related
+  - Turn 10: Not pointers related
+  what level does it indicate? LOW
+- loops: was it tested? yes, 2 times
+  - Turn 9: "I think loops are when you repeat something by writing the same code over and over…" → LOW
+  - Turn 10: Not loops related
+  what level does it indicate? LOW
+
+Updated beliefs:
+  recursion: L=1.00 M=0.00 H=0.00 -> low (100%)
+  pointers: L=1.00 M=0.00 H=0.00 -> low (100%)
+  loops: L=1.00 M=0.00 H=0.00 -> low (100%)
+
+Correctness check (2/5 correct):
+  recursion: low ✗
+  pointers: low ✓
+  loops: low ✓
+
+============================================================
+GAME COMPLETE
+============================================================
+Turns taken: 10
+All correct: False
+Accuracy: 67% (3/5 skills correct)
+
+Ground Truth:  recursion: high, pointers: low, loops: low
+Predictions:   recursion: low, pointers: low, loops: low
+
+  recursion: predicted low (conf 100%), actual high ✗
+  pointers: predicted low (conf 100%), actual low ✓
+  loops: predicted low (conf 100%), actual low ✓
+============================================================
+
